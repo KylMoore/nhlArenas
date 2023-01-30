@@ -1,0 +1,13 @@
+MVP
+
+on page load mount screen with dropdown menu
+	if loading have a loading screen
+when selecting a team from the drop down change
+	fetch the team data from the api when selecting/setting team 
+	mount the team arena or city the team plays in
+	when changing the selected option change the information
+
+
+Stretch
+
+add a firebase database that can track what teams arenas you've been to with little checkboxes?
