@@ -1,25 +1,25 @@
-import logo from './logo.svg';
+import { useState, useEffect } from 'react';
+
 import './App.css';
 
+
+
 function App() {
+
+  const [team, setTeam] = useState();
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='backgroundImage'>
+        <h1>NHL Arena</h1>
+        
+      </div>
     </div>
   );
 }
 
 export default App;
+
+
+// GET https://statsapi.web.nhl.com/api/v1/teams
