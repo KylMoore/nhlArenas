@@ -1,17 +1,41 @@
 .App {
-  text-align: center;
   height: 100%;
 }
 
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1080px;
+}
+
 html {
-  height: 100%;
+  font-size: 125%;
 }
 
 .backgroundImage {
   background-image: url(./assets/Icehockeylayout.svg);
-  
-
+  height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+h1 {
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  font-size: 3rem;
+  text-align: center;
+  background-color: firebrick;
+  color: black;
+}
+
+form {
+  margin: 1rem;
+  padding: 1rem;
+}
+
+li {
+  list-style: none;
 }
