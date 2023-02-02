@@ -15,21 +15,29 @@ html {
 .backgroundImage {
   background-image: url(./assets/Icehockeylayout.svg);
   height: 100vh;
+  width: 100vw;
+  position: absolute;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover;  
+  opacity: 40%;
+  z-index: -1;
 }
 
-h1 {
-  align-content: center;
+.arenaPickerContainer {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-content: center;
   align-items: center;
-  width: 50%;
-  font-size: 3rem;
-  text-align: center;
-  background-color: firebrick;
-  color: black;
 }
+
+  h1 {
+    width: 50%;
+    font-size: 3rem;
+    text-align: center;
+    color: black;
+  }
 
 form {
   margin: 1rem;

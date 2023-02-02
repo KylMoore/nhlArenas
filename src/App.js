@@ -9,29 +9,39 @@ function App() {
 
   const handleSubmit = (team) => {
     setTeams([...teams, team]);
-    // console.log(setTeam);
   };
 
   return (
     <div className="App">
-      <div className="backgroundImage">
-        <h1>NHL Arena Tracker</h1>
-        <TeamPicker onSubmit={handleSubmit} />
-
+      <div className="backgroundImage"></div>
+      <div className="wrapper">
+        <div className="arenaPickerContainer">
+          <h1>NHL Arena Tracker</h1>
+          <TeamPicker onSubmit={handleSubmit} />
+        </div>
         <ul>
           {teams.map((team, index) => {
-            return <li key={index}>{team.name}</li>;
+            return (
+              <li key={index}>
+                {team.venue.name} - {team.venue.city}
+              </li>
+            );
           })}
         </ul>
 
-        {/* {teams && <>{teams.name}</>} */}
-        {/* fdsaf ? <></> : f */}
+        {/* fr ? <></> : f */}
       </div>
     </div>
   );
 }
 
 export default App;
+
+// {
+//   venue.map((venue) => {
+//     return venue.city;
+//   });
+// }
 
 // MVP
 
