@@ -3,7 +3,7 @@ import axios from "axios";
 
 function TeamPicker({ onSubmit }) {
   const [teams, setTeams] = useState([]);
-  const [queryIndex, setQueryIndex] = useState("");
+  // const [queryIndex, setQueryIndex] = useState("");
   const [currentIndex, setCurrentIndex] = useState("-1");
 
   useEffect(() => {
@@ -14,7 +14,6 @@ function TeamPicker({ onSubmit }) {
     })
       .then((response) => {
         setTeams(response.data.teams);
-        // console.log(response.data.teams);
       })
       .catch(() => {
         alert("Something went wrong, try again later!");
@@ -27,14 +26,15 @@ function TeamPicker({ onSubmit }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setQueryIndex(currentIndex);
+    // setQueryIndex(currentIndex);
+    onSubmit(teams[currentIndex]);
   };
 
-  useEffect(() => {
-    if (currentIndex !== "-1") {
-      onSubmit(teams[currentIndex]);
-    }
-  }, [queryIndex]);
+  // useEffect(() => {
+  //   if (currentIndex !== "-1") {
+  //     onSubmit(teams[currentIndex]);
+  //   }
+  // }, [queryIndex]);
 
   return (
     <>
