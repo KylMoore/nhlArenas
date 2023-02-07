@@ -42,7 +42,7 @@ function TeamPicker({ onSubmit }) {
         <form onSubmit={handleSubmit}>
           <label htmlFor="team"></label>
           <select value={currentIndex} onChange={handleChange}>
-            <option value="-1" disabled>
+            <option className="disabled" value="-1" disabled>
               Select Team
             </option>
             {teams.map((team, index) => {
@@ -53,7 +53,7 @@ function TeamPicker({ onSubmit }) {
               );
             })}
           </select>
-          <button type="submit">Add!</button>
+          <button type="submit">Add</button>
         </form>
       ) : null}
     </>
