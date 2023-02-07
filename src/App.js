@@ -19,11 +19,7 @@ function App() {
   };
 
   const handleFavorite = () => {
-    const favoriteClicked = document.getElementsByClassName("noStar");
-    if (favoriteClicked === "clicked") {
-      // favoriteClicked.display = ""
-      console.log("clicked");
-    }
+    //  stretch goal to be added
   };
 
   return (
@@ -38,7 +34,7 @@ function App() {
           {teams.map((team, index) => {
             return (
               <li key={index}>
-                <div>
+                <div className="teamInfo">
                   {team.venue.name} - {team.venue.city}
                 </div>
                 <div onClick={handleFavorite} className="liContainer">
