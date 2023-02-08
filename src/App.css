@@ -25,11 +25,11 @@ html {
   background-image: url(./assets/Icehockeylayout.svg);
   height: 100vh;
   width: 100vw;
-  position: absolute;
+  position: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;  
-  opacity: 40%;
+  opacity: 20%;
   z-index: -1;
 }
 
@@ -41,14 +41,14 @@ html {
   align-items: center;
 }
 
-  h1 {
-    width: 100%;
-    margin: 1rem;
-    font-size: 5rem;
-    text-align: center;
-    color: black;
-    font-weight: 700;
-  }
+h1 {
+  width: 100%;
+  margin: 1rem;
+  font-size: 5rem;
+  text-align: center;
+  color: black;
+  font-weight: 700;
+}
 
 form {
   margin: 1rem;
@@ -74,11 +74,8 @@ li {
 .liContainer {
   display: flex;
   justify-content: space-evenly;
-  width: 15%;
-
+  width: 15%; 
 }
-
-
 
 li svg {
   width: 1rem;
@@ -122,12 +119,24 @@ button {
   font-weight: 700;
 }
 
+footer {
+      position: fixed;
+      padding: 10px 10px 0px 10px;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      /* Height of the footer*/
+      height: 40px;
+      background: grey;
+}
+
+/* Media Queries */
 
 @media (max-width: 768px) {
   h1 {
     font-size: 3.5rem;
   }
-
+  
   li {
     width: 100%;
   }

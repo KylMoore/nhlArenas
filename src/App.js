@@ -15,7 +15,6 @@ function App() {
     let newTeams = [...teams];
     newTeams.splice(index, 1);
     setTeams(newTeams);
-    console.log("clicked!");
   };
 
   const handleFavorite = () => {
@@ -68,6 +67,7 @@ function App() {
 
         {/* fr ? <></> : f */}
       </div>
+      <footer>Created by Kyle Moore</footer>
     </div>
   );
 }
