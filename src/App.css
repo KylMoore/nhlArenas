@@ -120,14 +120,25 @@ button {
 }
 
 footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
       position: fixed;
-      padding: 10px 10px 0px 10px;
       bottom: 0;
       width: 100%;
       text-align: center;
-      /* Height of the footer*/
-      height: 40px;
+      height: 2rem;
       background: grey;
+}
+
+footer li {
+  margin: 0 auto;
+}
+
+footer a {
+  width: 1rem;
+  height: 1rem;
+  margin: 1rem;
 }
 
 /* Media Queries */
